@@ -1,9 +1,9 @@
 specVersion: 0.34.0
 name: spring-music-knative
 runtime: springboot
-registry: ""
-image: ""
-imageDigest: ""
+registry: docker.io/uempfelccc
+image: docker.io/uempfelccc/spring-music-knative:latest
+imageDigest: sha256:0b4cb20d407cda3c884e395e0f5178d6fe059ad1c33ff4f14bd3afb522d28317
 created: 2022-11-18T11:07:18.125329+01:00
 invocation:
   format: http
