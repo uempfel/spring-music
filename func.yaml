@@ -1,0 +1,26 @@
+specVersion: 0.34.0
+name: spring-music-knative
+runtime: springboot
+registry: ""
+image: ""
+imageDigest: ""
+created: 2022-11-18T11:07:18.125329+01:00
+invocation:
+  format: http
+build:
+  buildpacks: []
+  builder: pack
+  buildEnvs:
+  - name: BP_NATIVE_IMAGE
+    value: "false"
+run:
+  volumes: []
+  envs: []
+deploy:
+  namespace: func
+  annotations: {}
+  options: {}
+  labels: []
+  healthEndpoints:
+    liveness: /actuator/health
+    readiness: /actuator/health
